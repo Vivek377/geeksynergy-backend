@@ -10,10 +10,6 @@ app.use(cors());
 
 app.use("/user", userRoute);
 
-app.get("/", () => {
-  console.log("working");
-});
-
 app.listen(process.env.PORT, async (req, res) => {
   try {
     await connection;
